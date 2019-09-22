@@ -26,6 +26,9 @@ Plug 'airblade/vim-gitgutter'
 " Better status line
 Plug 'vim-airline/vim-airline'
 
+" Integrate TMUX navigation with VIM
+Plug 'christoomey/vim-tmux-navigator'
+
 " ############################################################ 
 " C Language Plugins
 " ############################################################ 
