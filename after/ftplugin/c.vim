@@ -9,7 +9,7 @@ let b:colors_name="atom-dark"
 " clang
 
 let g:clang_format#style_options ={"ColumnLimit": 150}
-nnoremap <C-I> :ClangFormt<CR>
+nnoremap <C-I> :ClangFormat<CR>
 
 " YouCompleteMe
 

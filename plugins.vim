@@ -29,6 +29,9 @@ Plug 'vim-airline/vim-airline'
 " Integrate TMUX navigation with VIM
 Plug 'christoomey/vim-tmux-navigator'
 
+" Integrate Ranger with VIM
+Plug 'francoiscabrol/ranger.vim'
+
 " ############################################################ 
 " C Language Plugins
 " ############################################################ 

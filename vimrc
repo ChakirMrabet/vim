@@ -80,6 +80,11 @@ noremap <F3> :set hlsearch!<CR>
 " Quicker way to format the whole buffer
 nnoremap <C-i> gg=G
 
+" Folding settings
+set foldmethod=syntax   " Enables folding by syntax (based on the language)
+set foldnestmax=1       " Limits folding to top level only
+set foldlevel=10        " Open all folds in the begining 
+
 " ############################################################ 
 " VISUAL
 " ############################################################ 
@@ -121,9 +126,6 @@ set updatetime=100
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" Airline
-" let g:airline#extensions#tabline#enabled=1  " Enables tab bar when only buffers
 
 " ############################################################ 
 " TEMPORAL 
