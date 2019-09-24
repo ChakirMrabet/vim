@@ -32,6 +32,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " Integrate Ranger with VIM
 Plug 'francoiscabrol/ranger.vim'
 
+" NERDTree
+Plug 'scrooloose/nerdtree'
+
 " ############################################################ 
 " C Language Plugins
 " ############################################################ 

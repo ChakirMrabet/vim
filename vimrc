@@ -127,6 +127,10 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" NERDTRee
+map <C-m> :NERDTreeFind<CR>        
+map <C-n> :NERDTreeToggle %<CR>
+
 " ############################################################ 
 " TEMPORAL 
 " ############################################################ 
