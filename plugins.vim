@@ -15,7 +15,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'elzr/vim-json'
 
 " Universal code completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'for':['c','cpp']}
 
 " Git control
 Plug 'tpope/vim-fugitive'
@@ -34,6 +34,10 @@ Plug 'francoiscabrol/ranger.vim'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
+
+" Fuzzy Search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " ############################################################ 
 " C Language Plugins
@@ -55,6 +59,14 @@ Plug 'rhysd/vim-clang-format', { 'for' : ['c', 'cpp']}
 " JavaScript support for vim-polyglot
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 
+" Prettier formatter
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' , 'for': 'javascript'}
+
+" ############################################################ 
+" Go Plugins
+" ############################################################ 
+
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 " End of list
 call plug#end()

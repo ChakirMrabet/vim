@@ -41,6 +41,7 @@ set showcmd             " Show incomplete commands on the bar
 set wildmenu            " Show menu when using tab completion
 set nobackup            " Don't create backup file
 set noswapfile          " Don't create a swap file
+set autowrite           " Saves files when doing :make
 
 " ############################################################ 
 " SPECIFIC SETTINGS
@@ -76,9 +77,6 @@ nnoremap <C-Left> :tabprevious<CR>
 
 " Hide search highlights on the text 
 noremap <F3> :set hlsearch!<CR>
-
-" Quicker way to format the whole buffer
-nnoremap <C-i> gg=G
 
 " Folding settings
 set foldmethod=syntax   " Enables folding by syntax (based on the language)
@@ -129,7 +127,7 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " NERDTRee
 map <C-m> :NERDTreeFind<CR>        
-map <C-n> :NERDTreeToggle %<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " ############################################################ 
 " TEMPORAL 
