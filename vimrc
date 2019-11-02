@@ -43,6 +43,14 @@ set nobackup            " Don't create backup file
 set noswapfile          " Don't create a swap file
 set autowrite           " Saves files when doing :make
 
+" Auto-closing
+"inoremap " ""<left>
+"inoremap ' ''<left>
+"inoremap ( ()<left>
+"inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+
 " ############################################################ 
 " SPECIFIC SETTINGS
 " ############################################################ 
@@ -134,5 +142,5 @@ map <C-n> :NERDTreeToggle<CR>
 " ############################################################ 
 
 autocmd BufNewFile,BufRead *.jack set syntax=cpp
-
+autocmd BufNewFile,BufRead *.tpl set syntax=html
 

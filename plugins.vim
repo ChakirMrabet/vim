@@ -15,7 +15,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'elzr/vim-json'
 
 " Universal code completion
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'for':['c','cpp']}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Git control
 Plug 'tpope/vim-fugitive'
@@ -38,6 +38,9 @@ Plug 'scrooloose/nerdtree'
 " Fuzzy Search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" Delimitier surrounding
+Plug 'tpope/vim-surround'
 
 " ############################################################ 
 " C Language Plugins
@@ -66,7 +69,14 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' , 'for': 'javascript'}
 " Go Plugins
 " ############################################################ 
 
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries', 'for': 'go' }
+
+" ############################################################ 
+" HTML/CSS Language Plugins
+" ############################################################ 
+
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'smarty']}
+Plug 'skammer/vim-css-color', {'for':'css'}
 
 " End of list
 call plug#end()
